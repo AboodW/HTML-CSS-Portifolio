@@ -168,11 +168,11 @@ body{
    }
    .flex,.fa,.fab{
       font-size:30px;
-      margin-left: 1rem;;
+      margin-left: 0.7rem;;
    }
-   .introduction h1{font-size:2rem;}
-   .introduction h2{font-size:1.5rem;}
-   .introduction h3{font-size:0.7rem;}
+   .introduction h1{font-size:2.2rem;}
+   .introduction h2{font-size:1.7rem;}
+   .introduction h3{font-size:0.8rem;}
 
    .bubble span {
       width:10px;
