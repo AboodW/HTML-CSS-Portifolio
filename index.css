@@ -160,6 +160,7 @@ body{
       font-size:1.5rem;
    }
    .card-container p{
+      padding:10px;
       font-size:1rem;
    }
    .card-container h2{
@@ -167,13 +168,14 @@ body{
    }
    .flex,.fa,.fab{
       font-size:30px;
+      margin-left: 1.5rem;;
    }
    .introduction h1{font-size:2rem;}
    .introduction h2{font-size:1.5rem;}
-   .introduction h3{font-size:1.1rem;}
+   .introduction h3{font-size:0.7rem;}
 
    .bubble span {
-      width:15px;
-      height:15px;
+      width:10px;
+      height:10px;
    }
  }
