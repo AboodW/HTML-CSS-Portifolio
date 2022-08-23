@@ -6,6 +6,7 @@
 
 body{
    min-height:100vh;
+   max-height: 400vh;
    background:#0c192c;
 }
 
@@ -31,7 +32,7 @@ body{
    box-shadow: 0 0 10px #4fc3dc44,
    0 0 50px #4fc3dc,
    0 0 100px #4fc3dc ;
-   animation: animate 30s linear infinite;
+   animation: animate 40s linear infinite;
    animation-duration:calc(200s / var(--i));
   
 }
@@ -43,11 +44,10 @@ body{
    0 0 100px #ff2d75 ;
 }
 
-
 @keyframes animate
 {
    0%{
-      transform: translateY(200vh) scale(0)
+      transform: translateY(250vh) scale(0)
    }
    100%{
       transform: translateY(-10vh) scale(1)
@@ -113,24 +113,26 @@ body{
    /* color:#2f5876; */
 }
 
-.cards{
-   display:flex;
-   /* justify-content:center; */
-}
-
 .card-container{
-	/* box-shadow: 0 15px 30px 1px #9aa7bb; */
-	/* background: rgba(154, 167, 187, 0.80); */
+	box-shadow: 0 15px 30px 1px #2f5876;
+	background: rgba(47, 88, 118, 0.7);
 
 	text-align: center;
 	border-radius: 5px;
 	overflow: hidden;
-	margin: 10rem auto ;
+	margin: 10rem auto 5rem auto ;
 	height: fit-content;
 	width: fit-content;
+   padding:20px;
+   transition: 0.3s ease-in-out;
 }
 
-.card-container h2{
+.card-container:hover{
+   background: rgba(33, 60, 80, 0.9);
+   cursor: pointer;
+}
+
+.card-container span{
    color:#ff2d75;
    font-size:3rem;
    text-transform: uppercase;
@@ -155,7 +157,7 @@ body{
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
    .connect{
       font-size:1.5rem;
    }
@@ -164,11 +166,101 @@ body{
       font-size:1rem;
    }
    .card-container h2{
-      font-size:1.5rem;
+      font-size:2rem;
    }
    .flex,.fa,.fab{
       font-size:30px;
-      margin-left: 0.7rem;;
+      margin-left: 1rem;;
+   }
+   .project-container{
+      padding:15px;
+   }
+   .introduction h1{font-size:4rem;}
+   .introduction h2{font-size:3rem;}
+   .introduction h3{font-size:1.5rem;}
+
+   .bubble span {
+      width:20px;
+      height:20px;
+   }
+   .bubble span {
+      animation: animate 50s linear infinite;
+      animation-duration:calc(200s / var(--i));
+   }
+
+   @keyframes animate
+{
+   0%{
+      transform: translateY(320vh) scale(0)
+   }
+   100%{
+      transform: translateY(-10vh) scale(1)
+   }
+}
+ }
+
+@media only screen and (max-width: 600px) {
+   .connect{
+      font-size:1.5rem;
+   }
+   .card-container p{
+      padding:10px;
+      font-size:1rem;
+      padding :10px;
+   }
+   .card-container h2{
+      font-size:1.5rem;
+   }
+
+   .project-container{
+      padding:15px;
+   }
+
+   .flex,.fa,.fab{
+      font-size:30px;
+      margin-left: 1rem;;
+   }
+   .introduction h1{font-size:3.3rem;}
+   .introduction h2{font-size:2.2rem;}
+   .introduction h3{font-size:0.9rem;}
+
+   .bubble span {
+      width:15px;
+      height:15px;
+   }
+   .bubble span {
+      animation: animate 50s linear infinite;
+      animation-duration:calc(200s / var(--i));
+   }
+
+   @keyframes animate
+{
+   0%{
+      transform: translateY(300vh) scale(0)
+   }
+   100%{
+      transform: translateY(-10vh) scale(1)
+   }
+}
+ }
+
+ @media only screen and (max-width: 500px) {
+   .connect{
+      font-size:1.5rem;
+   }
+   .card-container p{
+      padding:10px;
+      font-size:1rem;
+   }
+   .card-container h2{
+      font-size:1.6rem;
+   }
+   .flex,.fa,.fab{
+      font-size:30px;
+      margin-left: 1rem;
+   }
+   .project-container{
+      padding:15px;
    }
    .introduction h1{font-size:2rem;}
    .introduction h2{font-size:1.5rem;}
@@ -178,4 +270,19 @@ body{
       width:10px;
       height:10px;
    }
+
+   .bubble span {
+      animation: animate 50s linear infinite;
+      animation-duration:calc(200s / var(--i));
+   }
+
+   @keyframes animate
+{
+   0%{
+      transform: translateY(300vh) scale(0)
+   }
+   100%{
+      transform: translateY(-10vh) scale(1)
+   }
+}
  }
